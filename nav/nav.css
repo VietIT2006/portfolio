@@ -1,0 +1,84 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* căn giữa theo chiều dọc */
+    list-style: none;
+    padding: 0 20px;  /* thêm khoảng cách bên trái/phải */
+    height: 70px; /* xác định chiều cao cụ thể */
+    width: 100%;
+    font-size: 20px;
+    color: rgb(224, 103, 52);
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#name-text {
+    font-size: 25px;
+}
+.nav-link {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(224, 103, 52);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-regular {
+    color: rgb(255, 255, 255);
+}
+.fa-github {
+    color: aliceblue;
+}
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+/* Áp dụng chung cho tất cả các link */
+.home, .about, .blog, .portfolio, #name-text {
+    position: relative;
+    display: inline-block;
+    color: rgb(224, 103, 52);
+    transition: color 0.3s ease;
+    padding:10px;
+}
+
+.home::after, .about::after, .blog::after, .portfolio::after, #name-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(224, 103, 52);
+    transition: width 0.3s ease;
+}
+
+.home:hover, .about:hover, .blog:hover, .portfolio:hover, #name-text:hover {
+    color: aliceblue !important;
+}
+
+.home:hover::after, .about:hover::after, .blog:hover::after, .portfolio:hover::after, #name-text:hover::after {
+    width: 100%;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 25px;
+} 

@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "title": "Bài viết 1",
+      "date-time": "2025-06-15",
+      "content": "Mình là Mai Sơn Việt hellllo",
+      "img": "img1.jpg"
+    },
+    {
+      "title": "Bài viết 2",
+      "date-time": "2025-06-14",
+      "content": "Bài viết khác...",
+      "img": "img2.jpg"
+    }
+  ]
+}

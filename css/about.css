@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+.container {
+    margin-top: 80px; /* Thêm dòng này để tránh nav bị đè lên */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conntent {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(98, 94, 94, 0.5);
+    border-radius: 20px;
+    width: 80%;
+    height: 60%;
+    padding: 10px;
+}
+
+.line {
+    border-bottom: 3px solid rgb(224, 103, 52);
+    width: 5%;
+    height: 20px;
+}
+.about-text {
+    color: aliceblue;
+    width: 90%;
+    opacity: 0; /* Thêm dòng này để đảm bảo animation chạy */
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.flex:nth-child(1) h1 {
+    flex: 1;
+    color: rgb(224, 103, 52);
+}
+.flex:nth-child(1) {
+    display: inline;
+    display: flex;
+    gap: 10px;
+}
+#profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 20px;
+    border: 5px solid rgb(224, 103, 52);
+}
+#text {
+    margin-top: 20px;
+    font-size: 25px;
+    text-indent: 40px;
+}
+.skills {
+    color: rgb(224, 103, 52);
+    width: 80%;
+}
+.tab_active {
+    border-radius: 8px;
+    color: rgb(224, 103, 52);
+    font-weight: bold;
+    border: 1px solid rgb(224, 103, 52);
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+}
+.skills h2 {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.section-line {
+    width: 40px;
+    height: 3px;
+    background-color: rgb(224, 103, 52);
+    display: inline-block;
+}
+
+.skills-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgb(224, 103, 52);
+    padding: 10px 20px;
+    color: rgb(224, 103, 52);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tab_active:hover,
+.tab:hover {
+    background-color: rgb(224, 103, 52);
+    color: black;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
+    padding: 0 9%;
+}
+
+.skill-card {
+    border: 1px solid rgb(224, 103, 52);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(224, 103, 52, 0.5), 0 0 10px rgba(224, 103, 52, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+
+.skill-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInLeft {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
