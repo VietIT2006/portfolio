@@ -4,19 +4,19 @@
       "title": "Hệ thống bán khóa học online (Coruse System Online)",
       "date-time": "2025-12-19",
       "content": "Hệ thống Learning Portal tích hợp tính năng thanh toán online, admin quản lí được dòng tiền vào, tài khoản vip",
-      "img": "/assets/avt.jpg"
+      "img": "/assets/imgBlog/img1.png"
     },
     {
       "title": "Hệ thống đọc báo và thời tiết (News and Weather System)",
       "date-time": "2025-08-14",
-      "content": "Hệ thống đọc báo và thời tiết có ứng dụng lấy vị trí thực tại và thời tiết bây giờ",
-      "img": "/assets/avt.jpg"
+      "content": "Hệ thống đọc báo và thời tiết có ứng dụng lấy vị trí thực tại cúa máy và thời tiết bây giờ",
+      "img": "/assets/imgBlog/img2.jpg"
     },
     {
       "title": "Tool FB",
       "date-time": "2026-1-21",
       "content": "Hệ thống quản lí tài khoản Facebook, tự động làm việc, check mã Token để bán tool",
-      "img": "/assets/avt.jpg"
+      "img": "/assets/imgBlog/image.png"
     }
   ]
 }

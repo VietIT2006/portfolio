@@ -4,7 +4,6 @@ let tab = document.getElementsByClassName("tab")[0];
 let change = true;
 function tab_active_change() {
   if (change) {
-    // Kích hoạt tab Tech Stack
     tab_active.style.backgroundColor = "rgb(224, 103, 52)";
     tab_active.style.color = "black";
     tab.style.backgroundColor = "rgb(0, 0, 0)";
