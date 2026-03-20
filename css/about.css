@@ -31,7 +31,7 @@ body {
     height: 20px;
 }
 .about-text {
-    color: aliceblue;
+    color: rgb(224, 103, 52);
     width: 90%;
     opacity: 0; /* Thêm dòng này để đảm bảo animation chạy */
     animation: fadeInLeft 0.8s ease-out forwards;
@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: rgb(224, 103, 52);
 }
 .flex:nth-child(1) h1 {
     flex: 1;
@@ -61,7 +61,7 @@ body {
 }
 #text {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     text-indent: 40px;
 }
 .skills {

@@ -1,10 +1,13 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* căn giữa theo chiều dọc */
+    align-items: center;
+    /* căn giữa theo chiều dọc */
     list-style: none;
-    padding: 0 20px;  /* thêm khoảng cách bên trái/phải */
-    height: 70px; /* xác định chiều cao cụ thể */
+    padding: 0 20px;
+    /* thêm khoảng cách bên trái/phải */
+    height: 70px;
+    /* xác định chiều cao cụ thể */
     width: 100%;
     font-size: 20px;
     color: rgb(224, 103, 52);
@@ -14,9 +17,11 @@ nav {
     left: 0;
     z-index: 999;
 }
+
 #name-text {
     font-size: 25px;
 }
+
 .nav-link {
     width: 70%;
     text-align: center;
@@ -26,6 +31,7 @@ nav {
     gap: 20px;
     font-size: 20px;
     padding: 10px 0;
+
 }
 
 a {
@@ -37,9 +43,11 @@ a {
 .fa-regular {
     color: rgb(255, 255, 255);
 }
+
 .fa-github {
     color: aliceblue;
 }
+
 .github {
     display: flex;
     justify-content: center;
@@ -48,16 +56,25 @@ a {
     padding: 20px;
     font-size: 30px;
 }
+
 /* Áp dụng chung cho tất cả các link */
-.home, .about, .blog, .portfolio, #name-text {
+.home,
+.about,
+.blog,
+.portfolio,
+#name-text {
     position: relative;
     display: inline-block;
     color: rgb(224, 103, 52);
     transition: color 0.3s ease;
-    padding:10px;
+    padding: 10px;
 }
 
-.home::after, .about::after, .blog::after, .portfolio::after, #name-text::after {
+.home::after,
+.about::after,
+.blog::after,
+.portfolio::after,
+#name-text::after {
     content: '';
     position: absolute;
     left: 0;
@@ -68,17 +85,42 @@ a {
     transition: width 0.3s ease;
 }
 
-.home:hover, .about:hover, .blog:hover, .portfolio:hover, #name-text:hover {
+.home:hover a,
+.about:hover a,
+.blog:hover a,
+.portfolio:hover a,
+.home.active a,
+.about.active a,
+.blog.active a,
+.portfolio.active a,
+#name-text:hover {
     color: aliceblue !important;
 }
 
-.home:hover::after, .about:hover::after, .blog:hover::after, .portfolio:hover::after, #name-text:hover::after {
+.home:hover::after,
+.about:hover::after,
+.blog:hover::after,
+.portfolio:hover::after,
+.home.active::after,
+.about.active::after,
+.blog.active::after,
+.portfolio.active::after,
+#name-text:hover::after {
     width: 100%;
 }
+
 .name {
     display: flex;
     justify-content: center;
     gap: 10px;
     padding: 10px;
     font-size: 25px;
-} 
+}
+
+.nav-clock {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: monospace;
+    color: rgb(224, 103, 52);
+    margin-right: 15px;
+}

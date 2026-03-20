@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../../nav/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/portfolio.css">
 </head>
+
 <body>
-    day la portfolio
+    <nav>
+        <div class="name">
+            <p id="name-text">
+                <i class="fa-regular fa-user"></i>
+                Mai Sơn Việt
+            </p>
+        </div>
+        <div class="nav-link">
+            <div class="home"><a href="../../container/home/index.html">Home</a></div>
+            <div class="about"><a href="../../container/about/index.html">About</a></div>
+            <div class="portfolio"> <a href="../../container/portfolio/index.html">Portfolio</a></div>
+            <div class="blog"><a href="../../container/blog/index.html">Blog</a></div>
+        </div>
+        <div class="github">
+            <div id="nav-clock" class="nav-clock"></div>
+            <a href="https://github.com/VietIT2006">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="portfolio-container">
+            <!-- Phần giới thiệu bản thân -->
+            <section class="about-me">
+                <h2>From Mai Son Viet</h2>
+                <p>Chào bạn, tôi là một nhà phát triển phần mềm đam mê công nghệ và sáng tạo. Tôi thích xây dựng các ứng
+                    dụng web với trải nghiệm người dùng tối ưu và giao diện đẹp mắt.</p>
+                <p>Trong quá trình làm việc, tôi luôn học hỏi và cập nhật các công nghệ mới nhất để nâng cao kỹ năng của
+                    bản thân.</p>
+            </section>
+            <section class="viewer-reviews">
+                <h2>Đánh giá từ người xem</h2>
+
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="reviewer-name">Tên của bạn <span class="required">*</span></label>
+                        <input type="text" id="reviewer-name" required placeholder="Nhập tên của bạn">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Đánh giá sao <span class="required">*</span></label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required />
+                            <label for="star5" title="5 sao">★</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 sao">★</label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 sao">★</label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 sao">★</label>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 sao">★</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewer-comment">Comment </label>
+                        <textarea id="reviewer-comment" rows="4"
+                            placeholder="Nhập nhận xét của bạn tùy ý..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submit-btn">Gửi đánh giá</button>
+                </form>
+
+                <div class="reviews-list" id="reviews-list">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../../js/portfolio.js"></script>
+    <script src="../../nav/nav.js"></script>
 </body>
+
 </html>
