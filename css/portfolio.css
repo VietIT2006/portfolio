@@ -46,6 +46,7 @@ h2 {
     line-height: 1.6;
     color: rgb(224, 103, 52);
     font-size: 20px;
+    margin-bottom: 15px; /* Thêm để tránh dính */
 }
 
 /* Review Form Styles */
@@ -172,4 +173,66 @@ input[type="text"]:focus, textarea:focus {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 180px;
+    }
+    .portfolio-container {
+        width: 92%;
+        padding: 1.5rem;
+    }
+    .about-me, .viewer-reviews {
+        padding: 1.5rem 0;
+        margin-bottom: 1.5rem;
+    }
+    .about-me p, label, input[type="text"], textarea, .submit-btn, .review-comment {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .reviewer-name {
+        font-size: 18px;
+    }
+    .star-rating label {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 200px;
+    }
+    .portfolio-container {
+        width: 92%;
+        border-radius: 12px;
+        padding: 1.25rem;
+    }
+    .about-me, .viewer-reviews {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+    .about-me p, label, input[type="text"], textarea, .submit-btn, .review-comment {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .reviewer-avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
 }

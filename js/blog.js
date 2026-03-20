@@ -1,4 +1,3 @@
-// blog.js
 let container = document.querySelector(".container");
 
 fetch("/data/page.json")
@@ -31,7 +30,7 @@ fetch("/data/page.json")
             <p>${post.content}</p>
           </div>
         </div>
-        <img src="/assets/avt.jpg" id="img-blog" alt="Mai Sơn Việt">
+        <img src=${post.img} id="img-blog" alt="Mai Sơn Việt">
       `;
 
       container.insertBefore(page, document.querySelector(".topic"));

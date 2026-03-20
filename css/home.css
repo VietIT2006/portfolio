@@ -53,3 +53,37 @@ p{
     overflow: hidden;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .home_portfolio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    #profile-picture {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+    #name {
+        font-size: 45px;
+    }
+    #skill {
+        font-size: 18px;
+        height: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #name {
+        font-size: 35px;
+    }
+    #profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+}

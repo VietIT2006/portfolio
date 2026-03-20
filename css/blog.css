@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #000000;
     color: rgb(224, 103, 52);
@@ -23,14 +24,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 70%;
+    width: 68%;
 }
 
 
 .page {
     border: 1px solid #333;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     width: 70%;
     padding: 30px;
     display: flex;
@@ -53,7 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+
 }
 
 .date {
@@ -83,18 +84,20 @@ body {
 }
 
 .topic {
-    width: 28%;
+    width: auto;
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
 .topic-title {
     font-size: 25px;
-    margin-bottom: 10px;
     color: rgb(224, 103, 52);
     border-bottom: 2px solid rgb(224, 103, 52);
     padding-bottom: 5px;
@@ -103,12 +106,24 @@ body {
 .topic .content {
     color: rgb(224, 103, 52);
     font-size: 20px;
+    word-break: break-word;
+}
+
+.topic a {
+    color: rgb(224, 103, 52);
+    font-size: 20px;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.topic a:hover {
+    text-decoration: underline;
 }
 
 .page:hover {
     background-color: #292929;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Hiệu ứng xuất hiện */
@@ -117,23 +132,61 @@ body {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Responsive đơn giản */
+/* Responsive */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        padding: 100px 20px;
+        padding: 150px 20px 20px;
     }
-    .page, .topic {
+
+    .page-list,
+    .page,
+    .topic {
         width: 100%;
     }
+
+    .page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .date {
+        justify-content: center;
+    }
+
     #img-blog {
-        width: 100px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .title,
+    .content,
+    .topic-title,
+    .topic .content {
+        font-size: 18px;
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding-top: 180px;
+    }
+
+    .title,
+    .topic-title {
+        font-size: 20px;
+    }
+
+    .content,
+    .topic .content {
+        font-size: 16px;
+    }
+}

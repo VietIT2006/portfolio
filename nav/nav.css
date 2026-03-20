@@ -124,3 +124,51 @@ a {
     color: rgb(224, 103, 52);
     margin-right: 15px;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .name {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    #name-text {
+        font-size: 22px;
+    }
+    .nav-link {
+        width: 100%;
+        gap: 10px;
+        font-size: 16px;
+        flex-wrap: wrap;
+        padding: 5px 0;
+    }
+    .github {
+        padding: 10px;
+        font-size: 24px;
+    }
+    .nav-clock {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #name-text {
+        font-size: 18px;
+    }
+    .nav-link {
+        gap: 5px;
+        font-size: 14px;
+    }
+    .home, .about, .blog, .portfolio {
+        padding: 5px;
+    }
+    .github {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
