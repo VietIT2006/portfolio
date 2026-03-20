@@ -1,7 +1,7 @@
 
 let container = document.querySelector(".container");
 
-fetch("/data/page.json")
+fetch("../../data/page.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Lỗi HTTP: " + response.status);
